@@ -1,0 +1,197 @@
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/h5p-socratic-method.scss ***!
+  \******************************************************************************************************************************/
+.h5p-socratic-method {
+  min-width: 250px;
+}
+.h5p-socratic-method .h5p-question-content {
+  margin: 0;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-message-box {
+  background-color: #f5e8d5;
+  border: 1px solid #eedd55;
+  box-sizing: border-box;
+  color: #874e12;
+  font-size: 0.8em;
+  padding: 0.8em;
+  width: 100%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-message-box .h5p-socratic-method-message {
+  margin: 0;
+  text-align: center;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-exercise-wrapper {
+  overflow-y: auto;
+  width: 50%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 1;
+  width: 50%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1058px;
+  width: 100%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-content-wrapper .h5p-socratic-method-main-notes-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 2em 0 2em;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-content-wrapper .h5p-socratic-method-main-notes-wrapper .h5p-socratic-method-notes-field.h5p-socratic-method-main-notes-recall-wrapper {
+  width: 30%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-content-wrapper .h5p-socratic-method-main-notes-wrapper .h5p-socratic-method-notes-field.h5p-socratic-method-main-notes-notes-wrapper {
+  width: 70%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-content-wrapper .h5p-socratic-method-summary-wrapper {
+  margin: 0.5em 2em 0.5em 2em;
+  min-width: 200px;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-content-wrapper .h5p-socratic-method-summary-wrapper .h5p-socratic-method-notes-field.h5p-socratic-method-summary-notes-summary-wrapper {
+  width: 100%;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-buttons-wrapper {
+  margin-left: 2em;
+  width: calc(100% - 4em);
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-buttons-wrapper .h5p-socratic-method-button-save::before {
+  content: "\f0ed";
+  font-family: "H5PFontAwesome4", sans-serif;
+  padding-right: 0.5em;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-buttons-wrapper .h5p-socratic-method-button-save.h5p-socratic-method-disabled {
+  background-color: #838383;
+  color: #e9e9e4;
+  cursor: inherit;
+  pointer-events: none;
+}
+.h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-buttons-wrapper .h5p-socratic-method-button-copy::before {
+  content: "\f0c5";
+  font-family: "H5PFontAwesome4", sans-serif;
+  padding-right: 0.5em;
+}
+
+@media only screen and (max-width: 960px) {
+  .h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-exercise-wrapper {
+    width: 100%;
+  }
+  .h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel .h5p-socratic-method-notes-wrapper {
+    width: 100%;
+  }
+}
+#backdrop {
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  top: 0;
+  z-index: -1;
+  background: black;
+  opacity: 40%;
+  display: none;
+}
+/*!*************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scripts/components/h5p-socratic-method-button.scss ***!
+  \*************************************************************************************************************************************************/
+.h5p-socratic-method-button {
+  align-items: center;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.2em 1.2em;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  display: flex;
+  flex-shrink: 0;
+  height: 3.6em;
+  padding: 0;
+  width: 3.6em;
+}
+.h5p-socratic-method-button:not(.h5p-socratic-method-button-disabled):hover {
+  background-color: rgba(26, 115, 217, 0.05);
+  cursor: pointer;
+}
+.h5p-socratic-method-button:not(.h5p-socratic-method-button-disabled):active {
+  background-color: rgba(26, 115, 217, 0.1);
+}
+.h5p-socratic-method-button:not(.h5p-socratic-method-button-disabled).h5p-socratic-method-button-active {
+  background-color: #1a73d9;
+  opacity: 20;
+}
+.h5p-socratic-method-button:not(.h5p-socratic-method-button-disabled).h5p-socratic-method-button-active:hover {
+  background-color: rgba(26, 115, 217, 0.9);
+}
+.h5p-socratic-method-button:not(.h5p-socratic-method-button-disabled).h5p-socratic-method-button-active:active {
+  background-color: rgba(26, 115, 217, 0.95);
+}
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scripts/components/h5p-socratic-method-titleBar.scss ***!
+  \***************************************************************************************************************************************************/
+.h5p-socratic-method-title-bar {
+  align-items: center;
+  background-color: #fff;
+  background-size: cover;
+  box-shadow: 10px 10px 30px rgba(166, 166, 166, 0.2);
+  display: flex;
+  overflow: hidden;
+  padding: 0.5em;
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-title {
+  color: #4c4452;
+  flex-grow: 1;
+  font-size: 1.15em;
+  font-weight: 700;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  text-decoration: none solid #4c4452;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-date {
+  color: #1a73d9;
+  flex-shrink: 0;
+  font-size: 1.15em;
+  font-weight: 700;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 1rem 0 0;
+  text-decoration: none solid #1a73d9;
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen {
+  background-color: rgba(26, 115, 217, 0.05);
+  background-image: url(10d26b9748a35fed5a6d.svg);
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen.h5p-socratic-method-button-disabled {
+  display: none;
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen:not(.h5p-socratic-method-button-disabled):hover {
+  background-color: rgba(26, 115, 217, 0.1);
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen:not(.h5p-socratic-method-button-disabled):active {
+  background-color: rgba(26, 115, 217, 0.2);
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen.h5p-socratic-method-button-active {
+  background-color: rgba(26, 115, 217, 0.05);
+  background-image: url(170d1633b96640aadc84.svg);
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen.h5p-socratic-method-button-active:not(.h5p-socratic-method-button-disabled):hover {
+  background-color: rgba(26, 115, 217, 0.1);
+}
+.h5p-socratic-method-title-bar .h5p-socratic-method-button.h5p-socratic-method-button-fullscreen.h5p-socratic-method-button-active:not(.h5p-socratic-method-button-disabled):active {
+  background-color: rgba(26, 115, 217, 0.2);
+}

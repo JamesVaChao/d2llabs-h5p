@@ -1,0 +1,269 @@
+[
+  {
+    "name": "initialMsg",
+    "type": "text",
+    "widget": "html",
+    "label": "Initial Message",
+    "importance": "high",
+    "enterMode": "p",
+    "tags": [
+      "strong",
+      "em",
+      "sub",
+      "sup",
+      "h2",
+      "h3",
+      "pre",
+      "code"
+    ],"default": "Ask me about stuff related to __________!"
+  },
+  {
+    "name": "courseContent",
+    "type": "text",
+    "widget": "html",
+    "label": "Course Content",
+    "importance": "high",
+    "enterMode": "p",
+    "tags": [
+      "strong",
+      "em",
+      "sub",
+      "sup",
+      "h2",
+      "h3",
+      "pre",
+      "code"
+    ],
+    "default" : "Did you know that the phrase “Let them eat cake,” supposedly spoken by Marie-Antoinette upon learning that the peasants had no bread, was probably never spoken by the French Queen? Nevertheless, the phrase has attained symbolic significance as an example of the obliviousness of French nobility to the dire circumstances of ordinary people during the years leading up to the French Revolution.)\\n\\nPortrait of Marie Antoinette by an unknown artist (probably Jean-Baptiste Gautier Dagoty), c. 1775\\n\\nThe Revolution of 1789 was a turning point in European history: a tumultuous period of upheaval and bloodshed that ushered in the decline of institutions such as the feudal system and absolute monarchy that led to the rise of republics and liberal democracies. As a result, the French Revolution is recognized by historians as playing a critical role in the development of modern, socially progressive nations.\\n\\nTowards the end of the 18th century, a combination of economic and social factors had caused feelings of frustration and resentment amongst the French citizenry.\\n\\nPortrait of Louis XVI by Joseph Duplessis, c. 1777\\n\\nFrench involvement in foreign wars and the high-spending habits of King Louis XVI had left the country deep in debt. Public resentment towards the privileges enjoyed by the nobility and the clergy had been exacerbated by an unpopular taxation scheme, which favored the nobles. In addition, following years of poor cereal harvests, peasant revolts had taken place as a result of increasing food prices.\\n\\nThe demand for greater social equality and reform had led to the spread of revolutionary ideas and in May 1789, in an attempt to resolve the sense of crisis overwhelming the country, Louis XVI arranged a meeting of the Estates-General—an ancient legislative body that hadn’t met since 1614.\\n \\nAs the representatives from the three estates, the clergy (First Estate), the nobility (Second Estate), and the commoners (Third Estate) set out their grievances, it became clear that the nobles were unwilling to relinquish their privileges. Also, the nobility and the clergy had more power in the assembly, which frustrated the common people.\\n\\nFrustrated with the absence of equal representation within the Estates-General, the delegates of the Third Estate decided to break away and form a National Assembly that was independent of the King.\\n\\nAs rumors began to circulate in the French capital that the King was gathering troops to dissolve the new legislative body, the people took to the streets in protest. In a period known as the Great Fear, riots broke out in Paris and then spread throughout the country, as peasants rose up against the years of exploitation and inequality associated with feudalism.\\n\\nStorming of the Bastille and arrest of the Governor M. de Launay by an unknown artist, c. 1789-91\\n\\nThe uprising is often symbolized by the events that took place on July 14, 1789 (now a national holiday in France) when the Bastille fortress in Paris was stormed and weapons and gunpowder were seized. The Bastille was a symbol of royal tyranny, and its fall marked the beginning of the revolution.\\n\\nIn an attempt to bring the country back under control, the National Assembly issued the August Decrees, which abolished the feudal system and ended many of the rights and privileges enjoyed by the nobles and clergy.\\n\\nThe decrees were soon followed by the issuance of the Declaration of the Rights of Man and of the Citizen, a core document of the Revolution that guaranteed judicial due process and established democratic principles. The document was based on the philosophical and political ideas of Enlightenment thinkers like John Locke, Jean-Jacques Rousseau, and Baron de Montesquieu. It showed that the leaders were committed to replacing the old, unfair system with a new one that was based on equal opportunities, freedom of speech, popular sovereignty, and representative government.\\n\\nWhile the decrees issued by the National Assembly had popular support, conflict arose over the nature of the newly written constitution between moderate and extremist elements within the legislative body.\\n\\nAttempts to introduce a constitutional monarchy were met with opposition from radicals, such as Maximilien de Robespierre, who took control of the new government and proclaimed the abolition of the monarchy and the establishment of the French Republic.\\n\\nPortrait of Maximilien de Robespierre by an unknown artist, c. 1790\\n\\nLouis XVI and his family were imprisoned, and the king was eventually executed on January 21, 1793. This event marked the beginning of a violent period in which the Jacobins, led by Robespierre, implemented the bloody Reign of Terror. Thousands of people were executed for supposed counter-revolutionary activities, including members of the aristocracy, clergy, and even ordinary citizens suspected of opposing the new government. The terror eventually came to an end with Robespierre’s execution in July 1794.\\n\\nExecution of Louis XVI by Georg Heinrich Sieveking, 1793\\n\\nDespite the eventual downfall of Robespierre and the return to a more moderate government, France remained in a state of turmoil and political uncertainty until a young general, named Napoleon Bonaparte, seized power in a coup d’état, in November 1799. The event marked the end of the French Revolution.\\n\\nThe French Revolution had a profound impact on the world. It established principles of liberty, equality, and fraternity that continue to shape modern Western democracy. It inspired similar uprisings and movements for independence throughout the world and marked the end of the old feudal order and the beginning of the modern era."
+  },
+  {
+    "name": "headline",
+    "type": "text",
+    "label": "Headline",
+    "importance": "low",
+    "optional": true,
+    "description": "If set, will be used for the headline of the exercise instead of the content title."
+  },
+  {
+    "label": "Instructions",
+    "importance": "medium",
+    "name": "instructions",
+    "type": "text",
+    "optional": true,
+    "description": "Students will see these instructions on top of the notes.",
+    "widget": "html",
+    "enterMode": "div",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "a",
+      "ul",
+      "ol",
+      "h2",
+      "h3",
+      "hr"
+    ]
+  },
+  {
+    "label": "Exercise content",
+    "importance": "medium",
+    "name": "exerciseContent",
+    "type": "library",
+    "options": [
+      "H5P.Audio 1.5",
+      "H5P.Image 1.1",
+      "H5P.AdvancedText 1.1",
+      "H5P.Video 1.6"
+    ],
+    "optional": false
+  },
+  {
+    "name": "notesFields",
+    "label": "Notes fields",
+    "description": "Settings for the notes fields.",
+    "importance": "low",
+    "type": "group",
+    "fields": [
+      {
+        "label": "Cue field title",
+        "importance": "low",
+        "name": "recallTitle",
+        "type": "text",
+        "default": "Cue",
+        "optional": true,
+        "description": "Title for the recall section."
+      },
+      {
+        "label": "Cue field placeholder",
+        "importance": "low",
+        "name": "recallPlaceholder",
+        "type": "text",
+        "default": "Enter your comments, questions, the main idea, etc. that you derive from your notes!",
+        "optional": true,
+        "description": "Placeholder for the cue section as a reminder for your students."
+      },
+      {
+        "label": "Notes field title",
+        "importance": "low",
+        "name": "notesTitle",
+        "type": "text",
+        "default": "Notes",
+        "optional": true,
+        "description": "Title for the notes section."
+      },
+      {
+        "label": "Notes field placeholder",
+        "importance": "low",
+        "name": "notesPlaceholder",
+        "type": "text",
+        "default": "Enter dates, details, definitions, formulas, examples, etc. from the source material!",
+        "optional": true,
+        "description": "Placeholder for the notes section as a reminder for your students."
+      },
+      {
+        "label": "Summary field title",
+        "importance": "low",
+        "name": "summaryTitle",
+        "type": "text",
+        "default": "Summary",
+        "optional": true,
+        "description": "Title for the summary section."
+      },
+      {
+        "label": "Summary field placeholder",
+        "importance": "low",
+        "name": "summaryPlaceholder",
+        "type": "text",
+        "default": "Summarize what you have learned!",
+        "optional": true,
+        "description": "Placeholder for the summary section as a reminder for your students."
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "Localization",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "notesSaved",
+        "type": "text",
+        "label": "Notes saved",
+        "importance": "low",
+        "default": "Notes saved"
+      },
+      {
+        "name": "save",
+        "type": "text",
+        "label": "Save",
+        "importance": "low",
+        "default": "Save"
+      },
+      {
+        "name": "noSaveContentState",
+        "type": "text",
+        "label": "Notes cannot be saved",
+        "importance": "low",
+        "default": "The platform either does not support the save content state feature or it is not activated in the platform's settings or you are not logged in. Your notes cannot be saved!"
+      },
+      {
+        "name": "copy",
+        "type": "text",
+        "label": "Text for \"Copy\" button",
+        "importance": "low",
+        "default": "Copy"
+      },
+      {
+        "name": "copyToClipboardSuccess",
+        "type": "text",
+        "label": "Notes copied to clipboard",
+        "importance": "low",
+        "default": "Notes copied to clipboard"
+      },
+      {
+        "name": "copyToClipboardError",
+        "type": "text",
+        "label": "Notes could not be copied to clipboard",
+        "importance": "low",
+        "default": "Notes could not be copied to clipboard"
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "common": true,
+    "label": "Readspeaker",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "buttonFullscreenEnter",
+        "type": "text",
+        "label": "Fullscreen button title (enter)",
+        "importance": "low",
+        "default": "Enter fullscreen mode"
+      },
+      {
+        "name": "buttonFullscreenExit",
+        "type": "text",
+        "label": "Fullscreen button title (exit)",
+        "importance": "low",
+        "default": "Exit fullscreen mode"
+      },
+      {
+        "name": "buttonToggleOpenNotes",
+        "type": "text",
+        "label": "Toggle button title (when notes closed)",
+        "importance": "low",
+        "default": "Open notes"
+      },
+      {
+        "name": "buttonToggleCloseNotes",
+        "type": "text",
+        "label": "Toggle button title (when notes opened)",
+        "importance": "low",
+        "default": "Close notes"
+      },
+      {
+        "name": "notesOpened",
+        "type": "text",
+        "label": "Notes opened",
+        "importance": "low",
+        "default": "The view has switched to your notes."
+      },
+      {
+        "name": "notesClosed",
+        "type": "text",
+        "label": "Notes closed",
+        "importance": "low",
+        "default": "The view has switched to the exercise."
+      },
+      {
+        "name": "notesSaved",
+        "type": "text",
+        "label": "Notes saved",
+        "importance": "low",
+        "default": "The notes were saved to the platform."
+      },
+      {
+        "name": "notesHide",
+        "type": "text",
+        "label": "Hide notes",
+        "importance": "low",
+        "default": "Hide @label notes",
+        "description": "@label is a placeholder and will be replaced with the respective label of the notes field."
+      },
+      {
+        "name": "notesShow",
+        "type": "text",
+        "label": "Show notes",
+        "importance": "low",
+        "default": "Show @label notes",
+        "description": "@label is a placeholder and will be replaced with the respective label of the notes field."
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+@use "@styles/main";
+
+.h5p-socratic-method-title-bar {
+  align-items: center;
+  background-color: #fff;
+  background-size: cover;
+  box-shadow: 10px 10px 30px rgba(166,166,166,0.2);
+  display: flex;
+  overflow: hidden;
+  padding: .5em;
+
+  .h5p-socratic-method-title {
+    color: main.$color-dark-text;
+    flex-grow: 1;
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    text-decoration: none solid main.$color-dark-text;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .h5p-socratic-method-date {
+    color: main.$color-base;
+    flex-shrink: 0;
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 1rem 0 0;
+    text-decoration: none solid main.$color-base;
+  }
+
+  .h5p-socratic-method-button {
+    &.h5p-socratic-method-button-fullscreen {
+      background-color: main.$color-base-05;
+      background-image: url(../../images/button-enter-fullscreen-icon-blue.svg);
+
+      &.h5p-socratic-method-button-disabled {
+        display: none;
+      }
+
+      &:not(.h5p-socratic-method-button-disabled):hover {
+        background-color: main.$color-base-10;
+      }
+
+      &:not(.h5p-socratic-method-button-disabled):active {
+        background-color: main.$color-base-20;
+      }
+
+      &.h5p-socratic-method-button-active {
+        background-color: main.$color-base-05;
+        background-image: url(../../images/button-exit-fullscreen-icon-blue.svg);
+
+        &:not(.h5p-socratic-method-button-disabled):hover {
+          background-color: main.$color-base-10;
+        }
+
+        &:not(.h5p-socratic-method-button-disabled):active {
+          background-color: main.$color-base-20;
+        }
+      }
+    }
+  }
+}

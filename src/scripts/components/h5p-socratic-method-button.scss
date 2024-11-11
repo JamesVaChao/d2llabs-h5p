@@ -1,0 +1,40 @@
+@use "@styles/main";
+
+.h5p-socratic-method-button {
+  align-items: center;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.2em 1.2em;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  display: flex;
+  flex-shrink: 0;
+  height: 3.6em;
+  padding: 0;
+  width: 3.6em;
+
+  &:not(.h5p-socratic-method-button-disabled) {
+    &:hover {
+      background-color: main.$color-base-05;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: main.$color-base-10;
+    }
+
+    &.h5p-socratic-method-button-active {
+      background-color: main.$color-base;
+      opacity: 20;
+
+      &:hover {
+        background-color: main.$color-base-90;
+      }
+
+      &:active {
+        background-color: main.$color-base-95;
+      }
+    }
+  }
+}

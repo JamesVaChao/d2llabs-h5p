@@ -1,0 +1,131 @@
+@use "@styles/main";
+
+.h5p-socratic-method {
+  min-width: 250px;
+
+  .h5p-question-content {
+    margin: 0;
+
+    .h5p-socratic-method-message-box {
+      background-color: main.$color-hint-message-background;
+      border: 1px solid main.$color-hint-message-border;
+      box-sizing: border-box;
+      color: main.$color-hint-message-text;
+      font-size: .8em;
+      padding: .8em;
+      width: 100%;
+
+      .h5p-socratic-method-message {
+        margin: 0;
+        text-align: center;
+      }
+    }
+
+    .h5p-socratic-method-panel {
+      max-width: main.$size-container-max-width;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      .h5p-socratic-method-exercise-wrapper {
+        overflow-y: auto;
+        width: 50%;
+      }
+
+      .h5p-socratic-method-notes-wrapper {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        z-index: 1;
+        width: 50%;
+      }
+
+      .h5p-socratic-method-notes-content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: main.$size-content-max-width;
+        width: 100%;
+
+        .h5p-socratic-method-main-notes-wrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 1em 2em 0 2em;
+
+          .h5p-socratic-method-notes-field {
+            &.h5p-socratic-method-main-notes-recall-wrapper {
+              width: 30%;
+            }
+
+            &.h5p-socratic-method-main-notes-notes-wrapper {
+              width: 70%;
+            }
+          }
+        }
+
+        .h5p-socratic-method-summary-wrapper {
+          margin: .5em 2em .5em 2em;
+          min-width: 200px;
+
+          .h5p-socratic-method-notes-field {
+            &.h5p-socratic-method-summary-notes-summary-wrapper {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .h5p-socratic-method-buttons-wrapper {
+        margin-left: 2em;
+        width: calc(100% - 4em);
+
+        .h5p-socratic-method-button-save {
+          &::before {
+            content: "\f0ed";
+            font-family: "H5PFontAwesome4", sans-serif;
+            padding-right: 0.5em;
+          }
+
+          &.h5p-socratic-method-disabled {
+            background-color: main.$background-color-button-disabled;
+            color: main.$color-button-disabled;
+            cursor: inherit;
+            pointer-events: none;
+          }
+        }
+
+        .h5p-socratic-method-button-copy::before {
+          content: "\f0c5";
+          font-family: "H5PFontAwesome4", sans-serif;
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .h5p-socratic-method .h5p-question-content .h5p-socratic-method-panel {
+    .h5p-socratic-method-exercise-wrapper {
+      width: 100%;
+    }
+
+    .h5p-socratic-method-notes-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+#backdrop {
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  top: 0;
+  z-index: -1;
+  background: black;
+  opacity: 40%;
+  display: none;
+}
